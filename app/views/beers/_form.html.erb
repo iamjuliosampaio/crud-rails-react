@@ -1,0 +1,37 @@
+<%= form_for(beer) do |f| %>
+  <% if beer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(beer.errors.count, "error") %> prohibited this beer from being saved:</h2>
+
+      <ul>
+      <% beer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :brand %>
+    <%= f.text_field :brand %>
+  </div>
+
+  <div class="field">
+    <%= f.label :style %>
+    <%= f.text_field :style %>
+  </div>
+
+  <div class="field">
+    <%= f.label :country %>
+    <%= f.text_field :country %>
+  </div>
+
+  <div class="field">
+    <%= f.label :quantity %>
+    <%= f.number_field :quantity %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

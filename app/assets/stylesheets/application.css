@@ -1,0 +1,27 @@
+.site-layout-content {
+	background: #fff;
+	padding: 24px;
+	min-height: 380px;
+}
+
+.logo {
+	width: 200px;
+	min-height: 31px;
+	margin: 16px 24px 16px 0;
+	float: left;
+	background-image: url(https://www.honeybadger.io/images/navbar_logo.svg?1602785015);
+	background-repeat: no-repeat;
+}
+
+.table-striped-rows th,
+.table-striped-rows td {
+	border-bottom: 1px solid #dedddd !important;
+}
+
+.table-striped-rows tr:nth-child(2n) td {
+	background-color: #fbfbfb;
+}
+
+.table-striped-rows thead {
+	background-color: #f1f1f1;
+}
