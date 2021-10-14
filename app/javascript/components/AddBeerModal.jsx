@@ -10,7 +10,7 @@ class AddBeerModal extends React.Component {
 	};
 
 	onFinish = (values) => {
-		const url = "api/v1/beers/";
+		const url = "api/v1/beers/create";
 		fetch(url, {
 			method: "post",
 			headers: {
